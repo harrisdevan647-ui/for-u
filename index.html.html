@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            background: #4a6cf7;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3451c7;
+        }
+
+        #myImage {
+            display: none;
+            width: 250px;
+            margin-top: 25px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Hi, Welcome to our page! 👋</h1>
+
+        <button onclick="showPhoto()">
+            Click to see your photo
+        </button>
+
+        <br>
+
+        <img id="myImage" src="photo.jpg" alt="Your Photo">
+
+    </div>
+
+    <script>
+        function showPhoto() {
+            document.getElementById("myImage").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
